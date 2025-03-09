@@ -1,0 +1,30 @@
+html,
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.line--graph__bar {
+    height: 100%;
+    width: 12px;
+    min-height: 200px;
+    position: relative;
+}
+
+.line--graph__bar::after {
+content: '';
+width: 100%;
+height: calc(100px*var(--size));
+background-color: #396dee;
+position: absolute;
+bottom: 0;
+border-radius: 40px;
+}
+
+@media (max-width: 768px) {
+    .line--graph__bar {
+        height: 100%;
+        width: 6px;
+        min-height: 200px;
+        position: relative;
+    }
+}

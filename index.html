@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <div class="w-full flex h-screen">
+      <div
+        class="bg-white md:w-64 w-24 overflow-hidden shadow-xl overflow-y-auto min-h-screen fixed h-full flex flex-col justify-between pb-5 rounded-r-3xl"
+      >
+        <div>
+          <div class="w-full text-center pt-5">
+            <h1
+              class="text-rose-500 uppercase md:text-4xl text-2xl font-semibold"
+            >
+              SAYD
+            </h1>
+          </div>
+          <div class="w-full px-5 md:pt-10 pt-5 flex flex-col gap-2">
+            <a href="#" class="w-full">
+              <button
+                class="w-full flex cursor-pointer h-12 items-center px-4 rounded-2xl gap-3 bg-blue-500/10 text-blue-500 duration-150 ease-in-out hover:bg-blue-500/20"
+              >
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z"
+                    />
+                  </svg>
+                </span>
+                <span class="hidden md:block">Reports</span>
+              </button>
+            </a>
+            <a href="#" class="w-full group">
+              <button
+                class="w-full flex cursor-pointer h-12 items-center px-4 rounded-2xl gap-3 duration-150 ease-in-out group-hover:bg-blue-500/5 group-hover:text-blue-500 text-gray-600"
+              >
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5 md:group-hover:ml-3 duration-150 ease-in-out"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"
+                    />
+                  </svg>
+                </span>
+                <span class="hidden md:block">Library</span>
+              </button>
+            </a>
+
+            <a href="#" class="w-full group">
+              <button
+                class="w-full flex cursor-pointer h-12 items-center px-4 rounded-2xl gap-3 group-hover:bg-blue-500/5 group-hover:text-blue-500 text-gray-600"
+              >
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5 md:group-hover:ml-3 duration-150 ease-in-out"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"
+                    />
+                  </svg>
+                </span>
+                <span class="hidden md:block">Activities</span>
+              </button>
+            </a>
+            <a href="#" class="w-full group">
+              <button
+                class="w-full flex cursor-pointer h-12 items-center px-4 rounded-2xl gap-3 group-hover:bg-blue-500/5 group-hover:text-blue-500 text-gray-600"
+              >
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5 md:group-hover:ml-3 duration-150 ease-in-out"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z"
+                    />
+                  </svg>
+                </span>
+                <span class="hidden md:block">People</span>
+              </button>
+            </a>
+          </div>
+          <div class="px-5 mt-5">
+            <div class="w-full h-0.5 bg-gray-200 md:hidden block"></div>
+            <h5 class="pl-4 font-medium text-gray-400 hidden md:block">
+              Support
+            </h5>
+            <div class="mt-5 flex flex-col gap-2">
+              <a href="#" class="w-full group">
+                <button
+                  class="w-full flex cursor-pointer h-12 items-center px-4 rounded-2xl gap-3 duration-150 ease-in-out group-hover:bg-blue-500/5 group-hover:text-blue-500 text-gray-600"
+                >
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-5 md:group-hover:ml-3 duration-150 ease-in-out"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                      />
+                    </svg>
+                  </span>
+                  <span class="hidden md:block">Settings</span>
+                </button>
+              </a>
+              <a href="#" class="w-full group">
+                <button
+                  class="w-full flex cursor-pointer h-12 items-center px-4 rounded-2xl gap-3 duration-150 ease-in-out group-hover:bg-blue-500/5 group-hover:text-blue-500 text-gray-600"
+                >
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-5 md:group-hover:ml-3 duration-150 ease-in-out"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"
+                      />
+                    </svg>
+                  </span>
+                  <span class="hidden md:block">Chats</span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="flex w-full px-5 md:gap-1 group items-center">
+          <div
+            class="rounded-full w-11 h-11 block group-hover:border-blue-500 border-2 duration-150 ease-out border-transparent cursor-pointer"
+          >
+            <img
+              src="./images/usman.jpeg"
+              alt="Tolibjon Saidkodirov user profile photo"
+              class="rounded-full w-full h-full"
+              loading="lazy"
+            />
+          </div>
+          <!-- profile -->
+          <div
+            class="group-hover:bg-blue-500/10 group-hover:text-blue-500 duration-150 ease-out py-px rounded-lg px-3 flex-1 hidden md:block"
+          >
+            <h6 class="font-semibold">Usman Ali</h6>
+            <p class="text-xs text-gray-500">
+              <em>usman@mail.ru</em>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="md:ml-64 ml-24 md:p-10 p-3 w-full">
+        <div
+          class="flex justify-between w-full items-center pb-4 border-b border-gray-200"
+        >
+          <h1 class="font-medium md:text-xl">Reports</h1>
+          <button
+            class="flex gap-2 md:bg-transparent bg-blue-500/10 md:p-0 p-1 rounded-full items-center text-sm"
+          >
+            <span class="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
+                />
+              </svg>
+            </span>
+            <span class="hidden md:block">Download</span>
+          </button>
+        </div>
+        <div class="flex md:gap-5 gap-1 justify-between items-center py-6">
+          <div
+            class="flex w-full bg-white justify-between items-center border border-gray-200 md:py-3 py-2 cursor-pointer px-2 rounded-full"
+          >
+            <p class="md:text-base text-xs flex items-center gap-1">
+              <span class="text-gray-600 md:block hidden">Timeframe: </span>
+              <span>All tm.</span>
+            </p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="md:size-5 size-3"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </div>
+          <div
+            class="flex w-full bg-white justify-between items-center px-2 rounded-full cursor-pointer border border-gray-200 md:py-3 py-2"
+          >
+            <p class="md:text-base text-xs flex items-center gap-1">
+              <span class="text-gray-600 md:block hidden">People: </span>
+              <span>All pe.</span>
+            </p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="md:size-5 size-3"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </div>
+          <div
+            class="flex w-full bg-white justify-between items-center px-2 rounded-full border cursor-pointer border-gray-200 md:py-3 py-2"
+          >
+            <p class="md:text-base text-xs flex items-center gap-1">
+              <span class="text-gray-600 md:block hidden">Topic: </span>
+              <span>All tp.</span>
+            </p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="md:size-5 size-3"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="flex w-full md:flex-row flex-col gap-5">
+          <div class="grid md:grid-cols-3 grid-cols-1 w-full gap-3">
+            <div
+              class="bg-white w-full md:pt-3 md:px-5 md:pb-10 pt-2 px-2 pb-3 rounded-3xl border border-gray-200 shadow shadow-gray-200"
+            >
+              <p class="text-sm text-gray-500">Active users</p>
+              <h1 class="mt-5 text-xl text-gray-400 font-semibold">
+                <span class="text-3xl text-black">27</span>/80
+              </h1>
+            </div>
+            <div
+              class="bg-white w-full md:pt-3 md:px-5 md:pb-10 pt-2 px-2 pb-3 rounded-3xl border border-gray-200 shadow shadow-gray-200"
+            >
+              <p class="text-sm text-gray-500">Questions answered</p>
+              <h1 class="mt-5 font-semibold">
+                <span class="text-3xl text-black">3,298</span>
+              </h1>
+            </div>
+            <div
+              class="bg-white w-full md:pt-3 md:px-5 md:pb-10 pt-2 px-2 pb-3 rounded-3xl border border-gray-200 shadow shadow-gray-200"
+            >
+              <p class="text-sm text-gray-500">Av. Session Length</p>
+              <h1 class="mt-5 font-semibold">
+                <span class="text-3xl text-black">2m 34s</span>
+              </h1>
+            </div>
+            <div
+              class="bg-white w-full md:pt-3 md:px-5 pt-2 px-2 pb-3 rounded-3xl border border-gray-200 shadow shadow-gray-200"
+            >
+              <p
+                class="text-sm text-gray-500 flex items-center justify-between"
+              >
+                Starting Knowledge
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
+                  />
+                </svg>
+              </p>
+              <h1 class="mt-5 font-semibold">
+                <span class="text-3xl text-black">64%</span>
+              </h1>
+              <div>
+                <svg
+                  class="w-full md:mt-5"
+                  viewBox="0 0 126 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    opacity="0.1"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M1 23.3759C1 23.3759 5.88798 22.5829 11.4453 24.488C22.0151 28.1114 22.618 21.4761 26.5374 18.2767C30.1232 15.3496 33.0929 17.1355 37.0854 20.7151C40.0301 23.3552 44.3215 27.787 48.7658 27.0735C52.8284 26.4213 55.7083 21.2236 61.3394 19.9017C65.8024 18.854 69.4294 21.7322 74.5685 20.7151C81.5402 19.3354 84.6544 11.2124 89.637 11.2124C95.7868 11.2124 100.117 4.34229 105.711 4.34229C111.273 4.34229 112.027 8.38208 118.111 11.2124C122.762 13.3762 125 11.2124 125 11.2124V34.3991H1V23.3759Z"
+                    fill="url(#paint0_linear_2_2522)"
+                  />
+                  <path
+                    d="M1 19.7745C1 19.7745 5.88798 18.9929 11.4453 20.8705C22.0151 24.4414 22.618 17.9022 26.5374 14.7491C30.1232 11.8644 33.0929 13.6244 37.0854 17.1522C40.0301 19.7541 44.3215 24.1217 48.7658 23.4186C52.8284 22.7758 55.7083 17.6533 61.3394 16.3505C65.8024 15.318 69.4294 18.1546 74.5685 17.1522C81.5402 15.7924 84.6544 7.78703 89.637 7.78703C95.7868 7.78703 100.117 1 105.711 1C111.273 1 111.568 4.99768 117.652 7.78703C122.303 9.91951 125 7.78703 125 7.78703"
+                    stroke="#1B59F8"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_2_2522"
+                      x1="23.41"
+                      y1="19.5933"
+                      x2="23.41"
+                      y2="34.3991"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#0062FF" />
+                      <stop offset="1" stop-color="white" stop-opacity="0.01" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+            <div
+              class="bg-white w-full md:pt-3 md:px-5 md:pb-10 pt-2 px-2 pb-3 rounded-3xl border border-gray-200 shadow shadow-gray-200"
+            >
+              <p class="text-sm text-gray-500">Current Knowledge</p>
+              <h1 class="mt-5 font-semibold">
+                <span class="text-3xl text-black">86%</span>
+              </h1>
+              <div>
+                <svg
+                  class="w-full md:mt-5"
+                  viewBox="0 0 140 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    opacity="0.1"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M1.00989 23.3759C1.00989 23.3759 6.42216 22.5829 12.5756 24.488C24.2791 28.1114 24.9467 21.4761 29.2865 18.2767C33.2569 15.3496 36.5452 17.1355 40.9659 20.7151C44.2264 23.3552 48.9782 27.787 53.8992 27.0735C58.3975 26.4213 61.5864 21.2236 67.8215 19.9017C72.7632 18.854 76.7791 21.7322 82.4695 20.7151C90.189 19.3354 93.6372 11.2124 99.1543 11.2124C105.964 11.2124 110.758 4.34229 116.953 4.34229C123.111 4.34229 123.946 8.38208 130.683 11.2124C135.832 13.3762 138.31 11.2124 138.31 11.2124V34.3991H1.00989V23.3759Z"
+                    fill="url(#paint0_linear_2_2522)"
+                  />
+                  <path
+                    d="M1.00989 19.7745C1.00989 19.7745 6.42216 18.9929 12.5756 20.8705C24.2791 24.4414 24.9467 17.9022 29.2865 14.7491C33.2569 11.8644 36.5452 13.6244 40.9659 17.1522C44.2264 19.7541 48.9782 24.1217 53.8992 23.4186C58.3975 22.7758 61.5864 17.6533 67.8215 16.3505C72.7632 15.318 76.7791 18.1546 82.4695 17.1522C90.189 15.7924 93.6372 7.78703 99.1543 7.78703C105.964 7.78703 110.758 1 116.953 1C123.111 1 123.438 4.99768 130.174 7.78703C135.324 9.91951 138.31 7.78703 138.31 7.78703"
+                    stroke="#1B59F8"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_2_2522"
+                      x1="25.8236"
+                      y1="19.5933"
+                      x2="25.8236"
+                      y2="34.3991"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#0062FF" />
+                      <stop offset="1" stop-color="white" stop-opacity="0.01" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+            <div
+              class="bg-white w-full md:pt-3 md:px-5 md:pb-10 pt-2 px-2 pb-3 rounded-3xl border border-gray-200 shadow shadow-gray-200"
+            >
+              <p class="text-sm text-gray-500">Knowledge Gain</p>
+              <h1 class="mt-5 font-semibold">
+                <span class="text-3xl text-black">+34%</span>
+              </h1>
+              <div>
+                <svg
+                  class="w-full md:mt-5"
+                  viewBox="0 0 140 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    opacity="0.1"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M1.53711 23.3759C1.53711 23.3759 6.94939 22.5829 13.1028 24.488C24.8063 28.1114 25.474 21.4761 29.8137 18.2767C33.7841 15.3496 37.0724 17.1355 41.4931 20.7151C44.7537 23.3552 49.5054 27.787 54.4264 27.0735C58.9247 26.4213 62.1136 21.2236 68.3487 19.9017C73.2904 18.854 77.3064 21.7322 82.9968 20.7151C90.7163 19.3354 94.1644 11.2124 99.6816 11.2124C106.491 11.2124 111.285 4.34229 117.48 4.34229C123.638 4.34229 124.474 8.38208 131.21 11.2124C136.36 13.3762 138.838 11.2124 138.838 11.2124V34.3991H1.53711V23.3759Z"
+                    fill="url(#paint0_linear_2_2522)"
+                  />
+                  <path
+                    d="M1.53711 19.7745C1.53711 19.7745 6.94939 18.9929 13.1028 20.8705C24.8063 24.4414 25.474 17.9022 29.8137 14.7491C33.7841 11.8644 37.0724 13.6244 41.4931 17.1522C44.7537 19.7541 49.5054 24.1217 54.4264 23.4186C58.9247 22.7758 62.1136 17.6533 68.3487 16.3505C73.2904 15.318 77.3064 18.1546 82.9968 17.1522C90.7163 15.7924 94.1644 7.78703 99.6816 7.78703C106.491 7.78703 111.285 1 117.48 1C123.638 1 123.965 4.99768 130.701 7.78703C135.851 9.91951 138.838 7.78703 138.838 7.78703"
+                    stroke="#1B59F8"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_2_2522"
+                      x1="26.3509"
+                      y1="19.5933"
+                      x2="26.3509"
+                      y2="34.3991"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#0062FF" />
+                      <stop offset="1" stop-color="white" stop-opacity="0.01" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <!-- statistics card -->
+          <div
+            class="w-full bg-white shadow shadow-gray-200 border border-gray-200 rounded-3xl md:p-5 p-2 overflow-hidden"
+          >
+            <!-- card header -->
+            <div
+              class="pb-2 border-b border-gray-200 flex justify-between items-center"
+            >
+              <h1 class="text-sm text-gray-500">Activity</h1>
+              <button class="text-xs flex items-center gap-px">
+                <span class="font-medium">Month</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="md:size-4 size-3"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </button>
+            </div>
+            <!-- card body -->
+            <div class="flex h-full gap-2 md:gap-5">
+              <div class="md:h-full flex flex-col justify-between py-5">
+                <p class="text-[9px] md:text-sm text-gray-500">400</p>
+                <p class="text-[9px] md:text-sm text-gray-500">300</p>
+                <p class="text-[9px] md:text-sm text-gray-500">200</p>
+                <p class="text-[9px] md:text-sm text-gray-500">100</p>
+                <p class="text-[9px] md:text-sm text-gray-500">0</p>
+                <p class="md:block hidden"></p>
+              </div>
+              <div
+                class="h-full md:py-5 mt-5 md:mt-0 md:pb-10 flex gap-1 md:gap-4 justify-between w-full"
+              >
+                <div class="h-full flex flex-col items-center gap-2">
+                  <div
+                    style="--size: 0.5"
+                    class="line--graph__bar bg-blue-500/20 h-full rounded-4xl"
+                  ></div>
+                  <p
+                    class="uppercase text-center text-[9px] md:text-sm text-gray-500"
+                  >
+                    Jan
+                  </p>
+                </div>
+                <div class="h-full flex flex-col items-center gap-2">
+                  <div
+                    style="--size: 1"
+                    class="line--graph__bar bg-blue-500/20 h-full rounded-4xl"
+                  ></div>
+                  <p
+                    class="uppercase text-center text-[9px] md:text-sm text-gray-500"
+                  >
+                    Feb
+                  </p>
+                </div>
+                <div class="h-full flex flex-col items-center gap-2">
+                  <div
+                    style="--size: 1.3"
+                    class="line--graph__bar bg-blue-500/20 h-full rounded-4xl"
+                  ></div>
+                  <p
+                    class="uppercase text-center text-[9px] md:text-sm text-gray-500"
+                  >
+                    Mar
+                  </p>
+                </div>
+                <div class="h-full flex flex-col items-center gap-2">
+                  <div
+                    style="--size: 1.1"
+                    class="line--graph__bar bg-blue-500/20 h-full rounded-4xl"
+                  ></div>
+                  <p
+                    class="uppercase text-center text-[9px] md:text-sm text-gray-500"
+                  >
+                    APr
+                  </p>
+                </div>
+                <div class="h-full flex flex-col items-center gap-2">
+                  <div
+                    style="--size: 0.9"
+                    class="line--graph__bar bg-blue-500/20 h-full rounded-4xl"
+                  ></div>
+                  <p
+                    class="uppercase text-center text-[9px] md:text-sm text-gray-500"
+                  >
+                    MAY
+                  </p>
+                </div>
+                <div class="h-full flex flex-col items-center gap-2">
+                  <div
+                    style="--size: 0.7"
+                    class="line--graph__bar bg-blue-500/20 h-full rounded-4xl"
+                  ></div>
+                  <p
+                    class="uppercase text-center text-[9px] md:text-sm text-gray-500"
+                  >
+                    JUN
+                  </p>
+                </div>
+                <div class="h-full flex flex-col items-center gap-2">
+                  <div
+                    style="--size: 2"
+                    class="line--graph__bar bg-blue-500/20 h-full rounded-4xl"
+                  ></div>
+                  <p
+                    class="uppercase text-center text-[9px] md:text-sm text-gray-500"
+                  >
+                    jul
+                  </p>
+                </div>
+                <div class="h-full flex flex-col items-center gap-2">
+                  <div
+                    style="--size: 0.4"
+                    class="line--graph__bar bg-blue-500/20 h-full rounded-4xl"
+                  ></div>
+                  <p
+                    class="uppercase text-center text-[9px] md:text-sm text-gray-500"
+                  >
+                    AUG
+                  </p>
+                </div>
+                <div class="h-full flex flex-col items-center gap-2">
+                  <div
+                    style="--size: 1.8"
+                    class="line--graph__bar bg-blue-500/20 h-full rounded-4xl"
+                  ></div>
+                  <p
+                    class="uppercase text-center text-[9px] md:text-sm text-gray-500"
+                  >
+                    SEP
+                  </p>
+                </div>
+                <div class="h-full flex flex-col items-center gap-2">
+                  <div
+                    style="--size: 1.7"
+                    class="line--graph__bar bg-blue-500/20 h-full rounded-4xl"
+                  ></div>
+                  <p
+                    class="uppercase text-center text-[9px] md:text-sm text-gray-500"
+                  >
+                    OCT
+                  </p>
+                </div>
+                <div class="h-full flex flex-col items-center gap-2">
+                  <div
+                    style="--size: 1.2"
+                    class="line--graph__bar bg-blue-500/20 h-full rounded-4xl"
+                  ></div>
+                  <p
+                    class="uppercase text-center text-[9px] md:text-sm text-gray-500"
+                  >
+                    NOV
+                  </p>
+                </div>
+                <div class="h-full flex flex-col items-center gap-2">
+                  <div
+                    style="--size: 1.9"
+                    class="line--graph__bar bg-blue-500/20 h-full rounded-4xl"
+                  ></div>
+                  <p
+                    class="uppercase text-center text-[9px] md:text-sm text-gray-500"
+                  >
+                    DEC
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
