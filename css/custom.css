@@ -16,12 +16,34 @@ body {
     content: '';
     width: 100%;
     height: 0;
-    background-color: #396dee;
+    background-color: var(--bar-color);
     position: absolute;
     bottom: 0;
     border-radius: 40px;
     opacity: 0;
 }
+.line--graph__bar__horizontal {
+    width: 100%;
+    height: 10px;
+    position: relative;
+}
+
+.line--graph__bar__horizontal::after {
+    content: '';
+    width: 0;
+    height: 10px;
+    background-color: var(--bar-color);
+    position: absolute;
+    bottom: 0;
+    border-radius: 40px;
+    opacity: 0;
+}
+
+.line--graph__bar__horizontal.loaded::after {
+    animation: growBarHorizontally 1.5s ease-out forwards;
+}
+
+
 
 @keyframes draw {
     from {
@@ -51,6 +73,19 @@ body {
     }
     100% {
         height: calc(80px * var(--size));
+        opacity: 1;
+    }
+}
+@keyframes growBarHorizontally {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        width: calc(10% * var(--size));
         opacity: 1;
     }
 }
