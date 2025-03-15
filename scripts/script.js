@@ -2,6 +2,8 @@ if ('Notification' in window) {
     checkNotificationPermission();
 }
 
+const TIME = "15:25"
+
 function checkNotificationPermission() {
     const permissionAsked = localStorage.getItem("notificationPermissionAsked");
 
@@ -9,11 +11,11 @@ function checkNotificationPermission() {
         Notification.requestPermission().then(permission => {
             localStorage.setItem("notificationPermissionAsked", "true");
             if (permission === "granted") {
-                scheduleNotification("15:12");
+                scheduleNotification(TIME);
             }
         });
     } else if (Notification.permission === "granted") {
-        scheduleNotification("15:12"); // Fixed to use correct time
+        scheduleNotification(TIME); // Fixed to use correct time
     }
 }
 
