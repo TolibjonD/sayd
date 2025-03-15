@@ -1,8 +1,8 @@
+const TIME = "15:30"
 if ('Notification' in window) {
     checkNotificationPermission();
 }
 
-const TIME = "15:25"
 
 function checkNotificationPermission() {
     const permissionAsked = localStorage.getItem("notificationPermissionAsked");
